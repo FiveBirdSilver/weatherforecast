@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/result.css">
+    <link rel="shortcut icon" href="img/weather-app.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cbd4d72f8.js" crossorigin="anonymous"></script>
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <div class="contain">
+        <h1>Weather Forecast</h1>
+        <form id="field_form">
+            <input type="text" id="field_value" placeholder="Enter City Name (ex.Seoul)" required autofocus>
+            <button class="BtnSearch"></button>
+        </form>
+    </div>
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <section id="result">
+        <button id="close"><img src="img/close.png"></button>
+            <section class="CityDaybox">
+                <div class="city"></div>
+                <div class="country"></div>
+                <div class="time"></div>
+                <div class="days"></div>
+                <div class="IconTempbox">
+                    <div class="weatherInfo">
+                        <span></span><br>
+                        <span></span>
+                    </div>
+                    <div class="Icon"></div>
+                </div>
+            </section>
+            <section class="weatherdetailsBox">
+                    <h2>Weather Details</h2>
+                    <div id="HighTemp" class="details">
+                        <p>High Temp</p>
+                        <span></span>
+                    </div>
+                    <div id="LowTemp" class="details">
+                        <p>Low Temp</p>
+                        <span></span>
+                    </div>
+                    <div id="wind" class="details">
+                        <p>Wind</p>
+                        <span></span>
+                    </div>
+                    <div id="humidity" class="details">
+                        <p>Humidity</p>
+                        <span></span>
+                    </div>
+                    <div id="cloudy" class="details">
+                        <p>Cloudy</p>
+                        <span></span>
+                    </div>
+            </section>
+            <button id="share">
+                <img src="img/share.png">
+                <p>share</p>
+            </button>
+        </section>
+        <header>FiveBirdSilver ⓒ 2021</header>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

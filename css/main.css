@@ -1,0 +1,58 @@
+
+.hidden {
+    display: none;
+}
+body {
+    background-image: url('../img/skybackground1.jpg');
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+}
+.contain {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'Caveat';
+    font-size: 48px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px darkgray;
+}
+.contain {
+    display: flex;
+}
+form {
+    position: relative;
+}
+input {
+    width: 400px;
+    height: 30px;
+    border : none;
+    cursor: none;
+    border-bottom: 5px double whitesmoke ;
+    padding-left: 15px;
+    background-color:transparent;
+}
+input:focus {
+    outline: none;
+}
+
+.BtnSearch {
+    font-weight : 900;
+    font-family: "Font Awesome 5 Free";
+    background-color: transparent;
+    border: none;
+    cursor: none;
+    position: absolute;
+    right: 5px;
+    top:5px;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.BtnSearch::before{
+    content : "\f002";
+  }
+

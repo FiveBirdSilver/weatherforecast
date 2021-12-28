@@ -1,0 +1,130 @@
+#result {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    position:absolute;
+    top: 20%;
+    left : 20%;
+    background-color: whitesmoke;
+    width: 55%;
+    height: 300px;
+    opacity: 70%;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.CityDaybox{
+    width: 50%;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mirza', cursive;
+    font-size: 50px;
+    margin-bottom:20px ;
+}
+
+.time, .days{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mirza', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.IconTempbox {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+.Icon {
+    display: flex;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.weatherInfo {
+    display: block;
+    margin-top: 30px;
+    width: auto;
+    height: 100px;
+    font-family: 'Mirza', cursive;
+    text-align: right;
+
+}
+.weatherInfo span:first-child{
+    font-size: 42px;
+
+}
+.weatherInfo span:last-child {
+    font-size: 20px;
+}
+
+.weatherdetailsBox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 50px;
+}
+.weatherdetailsBox h2 {
+    border-bottom: black solid 2px;
+    font-family: 'Mirza', cursive;
+    font-size: 36px;
+    margin-top: 10px;
+}
+.details {
+    display: flex;
+    position: relative;
+    margin: 5px 0px;
+}
+.details p {
+    margin: 0;
+    font-family: 'Mirza', cursive;
+    font-size: 24px;
+}
+.details span {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    margin: 0;
+    font-family: 'Mirza', cursive;
+    font-size: 20px;
+}
+#close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border: 0;
+    background-color: transparent;
+}
+#close img {
+    width: 15px;
+    height: 15px;
+}
+
+#share {
+    position: absolute;
+    bottom: 20px;
+    border: 0px;
+    background-color: transparent;
+    display: flex;
+}
+#share p {
+    margin: 0;
+    padding-left: 5px;
+    font-family: 'Mirza', cursive;
+    font-size: 24px;
+}
+#share img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+header {
+    text-align: center;
+    color: black;
+    font-family: 'Mirza', cursive;
+
+}
