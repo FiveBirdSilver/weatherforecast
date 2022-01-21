@@ -1,18 +1,34 @@
-
 .hidden {
     display: none;
 }
 body {
-    background-image: url('../img/skybackground1.jpg');
-    background-size: 100% 110%;
-    background-repeat: no-repeat;
+    margin:0;
+    height: 100%;
+    width: 100%;
 }
 .contain {
-    height: 550px;
+    background-image: url('../img/skybackground1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.containwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 h1 {
     font-family: 'Caveat';
@@ -20,39 +36,46 @@ h1 {
     color: whitesmoke;
     text-shadow: 3px 3px 3px darkgray;
 }
-.contain {
-    display: flex;
-}
+
 form {
-    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
 }
 input {
-    width: 400px;
+    width: 100%;
     height: 30px;
     border : none;
     cursor: none;
     border-bottom: 5px double whitesmoke ;
-    padding-left: 15px;
+    padding-left: 20px;
     background-color:transparent;
 }
 input:focus {
     outline: none;
 }
-
 .BtnSearch {
     font-weight : 900;
     font-family: "Font Awesome 5 Free";
     background-color: transparent;
     border: none;
     cursor: none;
-    position: absolute;
-    right: 5px;
-    top:5px;
     color: whitesmoke;
     font-size: 18px;
 }
-
 .BtnSearch::before{
     content : "\f002";
-  }
-
+}
+.footer p {
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    font-size: 12px;
+}
+.share {
+    display: none;
+}
+@media screen and (max-width:768px) {
+    form {
+        width:80%;
+    }
+}
