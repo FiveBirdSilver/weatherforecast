@@ -1,19 +1,19 @@
 #result {
     display: none;
-    grid-template-columns: 1fr 1fr;
-    position:absolute;
-    top: 20%;
-    left : 20%;
-    background-color: whitesmoke;
+    flex-direction: column;
     width: 55%;
-    height: 300px;
+    background-color: whitesmoke;
     opacity: 70%;
     border-radius: 20px;
-    padding: 50px;
+    padding: 3% 5% 3% 5%;
+    margin-bottom: 2%;
 }
-
+.resultwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .CityDaybox{
-    width: 50%;
+    text-align: left;
 }
 
 .city {
@@ -65,7 +65,6 @@
 .weatherdetailsBox {
     display: flex;
     flex-direction: column;
-    width: 50%;
     padding-left: 50px;
 }
 .weatherdetailsBox h2 {
@@ -92,39 +91,79 @@
     font-family: 'Mirza', cursive;
     font-size: 20px;
 }
-#close {
-    position: absolute;
-    right: 30px;
-    top: 20px;
+.close {
+    text-align: right;
+}
+#closebtn {
     border: 0;
     background-color: transparent;
+    text-align: right;
 }
-#close img {
+#closebtn img {
     width: 15px;
     height: 15px;
 }
-
-#share {
-    position: absolute;
-    bottom: 20px;
-    border: 0px;
-    background-color: transparent;
-    display: flex;
+.share {
+    display: none;
+    text-align: left;
 }
-#share p {
+.share p {
     margin: 0;
     padding-left: 5px;
     font-family: 'Mirza', cursive;
     font-size: 24px;
 }
-#share img {
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
+#sharebtn {
+    background-color: transparent;
+    border:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sharebtn img {
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
 }
 header {
     text-align: center;
     color: black;
     font-family: 'Mirza', cursive;
-
+}
+@media screen and (max-width:768px) {
+    #result {
+        width: 80%;
+    }
+    .resultwrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .CityDaybox{
+        width: 100%;
+    }
+    .citycontry {
+        width: 300px;
+        display: inline;
+    }
+    .city {
+        margin:0;
+    }
+    .IconTempbox {
+        margin: 0;
+    }
+    .Icon {
+        padding: 20px 0 20px 20px;
+    }
+    .weatherdetailsBox {
+       width: 100%;
+       padding: 0;
+    }
+    .weatherdetailsBox h2 {
+        margin-top: 0;
+    }
+    .share {
+        justify-content: center;
+        margin-top: 5%;
+    }
 }
