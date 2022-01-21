@@ -18,8 +18,9 @@ const loading = document.querySelector('.loading');
 const result = document.querySelector('#result');
 const Icon = document.querySelector(".Icon")
 
-const closeBtn = document.querySelector('#close');
-const shareBtn = document.querySelector('#share');
+const closeBtn = document.querySelector('#closebtn');
+const shareBtn = document.querySelector('#sharebtn');
+const share = document.querySelector('.share')
 
 shareBtn.addEventListener('click', function(){
     let url = window.location.href;
@@ -39,24 +40,28 @@ shareBtn.addEventListener('click', function(){
 function onGeoOk(Position) {
 
     const fieldForm = document.querySelector('#field_form');
+    const containwrap = document.querySelector('.containwrap');
+    const footer = document.querySelector('.footer')
     fieldForm.addEventListener('submit', searchCity);
 
     function searchCity(event) {
 
-        h1.style.display = "none";
-        fieldForm.style.display = "none";
+        containwrap.style.display = "none";
+        footer.style.display = "none";
         loading.style.display = "flex";
-        result.style.display = "none";
 
         setTimeout(function(){
             loading.style.display = "none";
             result.style.display = "flex";
+            share.style.display = "flex"
         },1500);
 
         closeBtn.addEventListener('click', function(){
             result.style.display = "none";
             h1.style.display = "flex";
-            fieldForm.style.display = "flex";
+            containwrap.style.display = "flex";
+            footer.style.display = "flex"
+
         });
         
 
